@@ -22,6 +22,59 @@ header {
   background-color: #1a237e;
   color: white;
   border-radius: 5px;
+  position: relative;
+}
+
+.header-top-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 6px;
+  padding: 0 15px;
+}
+
+.admin-controls {
+  position: relative;
+}
+
+.user-icon-btn {
+  background-color: transparent;
+  border: 1px solid #ffffff88;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  font-size: 18px;
+}
+
+.user-icon-btn:hover {
+  background-color: #3949ab;
+}
+
+.admin-menu {
+  position: absolute;
+  right: 0;
+  top: 42px;
+  background: white;
+  color: #333;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  min-width: 180px;
+  z-index: 20;
+  padding: 10px;
+}
+
+.admin-menu p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.admin-menu button {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.admin-menu button:last-child {
+  margin-bottom: 0;
 }
 
 header h1 {
@@ -190,6 +243,38 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 30;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 8px;
+  width: min(420px, 90vw);
+  padding: 20px;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  color: #333;
+  font-size: 18px;
+  padding: 4px 8px;
+}
+
+#teacher-only-notice p {
+  margin-top: 10px;
 }
 
 footer {
